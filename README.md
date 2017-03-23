@@ -8,4 +8,5 @@ Note: [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) is re
 2. Setup editorconfig
     a. https://github.com/editorconfig/editorconfig-core-c
     b. `git clone https://github.com/editorconfig/editorconfig-vim ~/.vim/bundle`
-3. Append my settings to existing .vimrc `git clone https://github.com/x0bile/vim-settings ~/.vim/bundle && cat ~/.vim/bundle/vim-settings/.vimrc >> ~/.vimrc && rm -r ~/.vim/bundle/vim-settings`
+3. Append my settings to existing .vimrc `git clone https://github.com/x0bile/vim-settings ~/.vim/bundle/vim-settings && cat ~/.vim/bundle/vim-settings/.vimrc >> ~/.vimrc && rm -r ~/.vim/bundle/vim-settings`
+
