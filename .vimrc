@@ -50,8 +50,13 @@ let g:syntastic_javascript_checkers = ['eslint']
 " JSX specific syntax hilighting
 let g:jsx_ext_required = 0
 
-" Always open files in new tabs
-autocmd VimEnter * tab all
-autocmd BufAdd * exe 'tablast | tabe "' . expand( "<afile") .'"'
+" Open NERDTree if no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-autocmd VimEnter * NERDTree " Open NERDTree on start
+" Open CtrlP results in new tab
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
+
