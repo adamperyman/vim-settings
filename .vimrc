@@ -15,10 +15,11 @@ endtry
 set ignorecase
 set wildignore+=node_modules/**,services/_build/**
 
-set clipboard=unnamed                                           " use regular clipboard
+set clipboard=unnamed                                           " Use regular clipboard
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab     " Spaces is life
 set number                                                      " Line numbers
 set nofoldenable                                                " Fuck folding
+set textwidth=120                                               " 120 col line width
 
 let g:NERDTreeWinPos = "left" " Force LHS NERDTree
 
