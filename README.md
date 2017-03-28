@@ -12,3 +12,4 @@ Note: [The Silver Searcher](https://github.com/ggreer/the_silver_searcher) is re
 
 3. Append my settings to existing .vimrc `git clone https://github.com/x0bile/vim-settings ~/.vim/bundle/vim-settings && cat ~/.vim/bundle/vim-settings/.vimrc >> ~/.vimrc && rm -rf ~/.vim/bundle/vim-settings`
 
+4. For code completion you will neet to setup [YouCompleteMe](https://github.com/Valloric/YouCompleteMe#full-installation-guide).
