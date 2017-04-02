@@ -13,9 +13,7 @@ endtry
 
 " Grep stuff
 set ignorecase
-set wildignore+=node_modules/**,services/_build/**
-
-let g:NERDTreeWinPos = "left" " Force LHS NERDTree
+set wildignore+=node_modules/**,services/_build/**,babel-cache/**
 
 " Custom Bindings
 nnoremap <F1>  :tabprev<CR>
@@ -55,8 +53,9 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
 
-" Show hidden files
-let NERDTreeShowHidden=1
+" NERD Tree stuff
+let NERDTreeShowHidden=1 
+let g:NERDTreeWinPos = "left" 
 
 " Misc settings
 set clipboard=unnamed                                           " use regular clipboard
