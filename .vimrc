@@ -62,3 +62,9 @@ set clipboard=unnamed                                           " use regular cl
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab     " Spaces is life
 set number                                                      " Line numbers
 set nofoldenable                                                " Fuck folding
+
+" Auto trim whitespace but still be safe when wrapping.
+autocmd BufWritePre * %s/\s\+$//e
+set wrap
+set linebreak
+set showbreak=>\ \ \
