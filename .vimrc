@@ -4,7 +4,7 @@
 set pastetoggle=<F3>
 nnoremap <F1>  :tabprev<CR>
 nnoremap <F2>  :tabnext<CR>
-nnoremap <leader>bq :bufdo q<CR>                                 " Easy quit (safe)
+nnoremap <leader>bq :qa<CR>                                     " Easy quit (safe)
 
 " Ctrl-P Settings
 set wildignore+=*/build/*,*.zip
