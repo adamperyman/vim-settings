@@ -1,22 +1,24 @@
 " Begin AP Config
 
 " Custom Bindings
+set pastetoggle=<F3>
 nnoremap <F1>  :tabprev<CR>
 nnoremap <F2>  :tabnext<CR>
-noremap <leader>bq :bufdo q<CR>                                 " Easy quit (safe)
-set pastetoggle=<F3>
+nnoremap <leader>bq :bufdo q<CR>                                 " Easy quit (safe)
 
-" Misc settings
-set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab     " Spaces is life
-set number                                                      " Line numbers
-set clipboard=unnamedplus                                       " Use system clipboard
-autocmd FileType * normal zR                                    " Always open files unfolded
-
-" Open CtrlP results in new tab
+" Ctrl-P Settings
+set wildignore+=*/build/*,*.zip
+let g:ctrlp_show_hidden=1
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
+
+" Misc Settings
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab     " Spaces is life
+set number                                                      " Line numbers
+set clipboard=unnamedplus                                       " Use system clipboard
+autocmd FileType * normal zR                                    " Always open files unfolded
 
 " NERD Tree stuff
 let NERDTreeShowHidden=1
@@ -32,7 +34,7 @@ set wrap
 set linebreak
 set showbreak=>\ \ \
 
-" Syntastic Settings
+" Syntastic Settings (assumes local ESLint)
 let g:syntastic_javascript_checkers=['eslint']
 let g:syntastic_javascript_eslint_generic = 1
 let g:syntastic_javascript_eslint_exec = '/bin/ls'
