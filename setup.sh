@@ -1,7 +1,6 @@
 #!/bin/bash
 
-home_dir=${1:-"$HOME"}
-VIM_CONFIG_PATH=$home_dir/.vim_runtime
+VIM_CONFIG_PATH=$HOME/.vim_runtime
 
 # Backup Amix's my_configs.vim
 if [ -f $VIM_CONFIG_PATH/my_configs.vim ]; then
@@ -14,7 +13,7 @@ fi
 
 # Patch .vimrc
 echo "Beginning Adam's .vimrc patch.."
-bash -c 'cat .vimrc > $VIM_CONFIG_PATH/my_configs.vim'
+cat .vimrc > $VIM_CONFIG_PATH/my_configs.vim
 echo "Adam's .vimrc patch complete.\n"
 
 echo "Adam's Vim settings have been applied successfully. Have a wonderful day :)"
