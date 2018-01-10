@@ -5,7 +5,7 @@ VIM_CONFIG_PATH=$HOME/.vim_runtime
 # Backup Amix's my_configs.vim
 if [ -f $VIM_CONFIG_PATH/my_configs.vim ]; then
   echo "Beginning my_configs.vim backup.."
-  mv $VIM_CONFIG_PATH/my_configs.vim $VIM_CONFIG_PATH/my_configs.vim.BAK
+  sudo -S mv $VIM_CONFIG_PATH/my_configs.vim $VIM_CONFIG_PATH/my_configs.vim.BAK
   echo "my_configs.vim backed up successfully.\n"
 else
   echo "my_configs.vim file not found, no backup necessary.\n"
