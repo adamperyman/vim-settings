@@ -1,6 +1,7 @@
 #!/bin/bash
 
-VIM_CONFIG_PATH=$HOME/.vim_runtime
+home_dir=${1:-"$HOME"}
+VIM_CONFIG_PATH=$home_dir/.vim_runtime
 
 # Backup Amix's my_configs.vim
 if [ -f $VIM_CONFIG_PATH/my_configs.vim ]; then

@@ -10,4 +10,5 @@
 
 1. Install Amix's [.vimrc](https://github.com/amix/vimrc)
 
-2. Run `sh setup.sh`
+2. Run `sh setup.sh [home_directory]`
+     * home_directory defaults to `$HOME`
