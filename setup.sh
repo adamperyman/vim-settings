@@ -14,7 +14,7 @@ fi
 
 # Patch .vimrc
 echo "Beginning Adam's .vimrc patch.."
-sudo cat .vimrc > $VIM_CONFIG_PATH/my_configs.vim
+sudo sh -c 'cat .vimrc > $VIM_CONFIG_PATH/my_configs.vim'
 echo "Adam's .vimrc patch complete.\n"
 
 echo "Adam's Vim settings have been applied successfully. Have a wonderful day :)"
