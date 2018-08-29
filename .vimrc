@@ -29,7 +29,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Auto trim whitespace but still be safe when wrapping.
-autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre /^[^.]+$|\.(?!(md)$)([^.]+$)/ %s/\s\+$//e " Trim whitespace for all files except markdown.
 set wrap
 set linebreak
 set showbreak=>\ \ \
